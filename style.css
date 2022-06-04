@@ -1,0 +1,53 @@
+:root {
+  --white-color: #ffffff;
+  --gold-color: #c98c08;
+  --basic-font: "Arial";
+  --company-font: "Times New Roman";
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  background-color: #000000;
+  color: var(--white-color);
+  font-family: var(--basic-font);
+  padding: 10px;
+}
+.container {
+  width: 100%;
+}
+.company {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header-logo {
+  width: 250px;
+  margin-top: 20px;
+}
+
+.header-phone {
+  color: var(--gold-color);
+}
+.header-button{
+  background-color: transparent;
+  border: 1px solid var(--gold-color);
+  border-radius: 20rem;
+  color: var(--white-color);
+  padding: .4rem 2.8rem;
+  text-transform: uppercase;
+}
+
+@media (min-width: 534px) {
+  .container {
+    width: 450px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) {}
+@media (min-width: 1024px) {}
+@media (min-width: 1280px) {}
+@media (min-width: 1440px) {}
