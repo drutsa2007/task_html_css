@@ -17,16 +17,40 @@ body {
 .container {
   width: 100%;
 }
+.all-elements {
+  display: block;
+}
+.block-screen {
+  display: block;
+}
 .company {
   display: flex;
   justify-content: center;
   justify-items: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 10px;
 }
 .header-logo {
   width: 250px;
   margin-top: 20px;
+}
+.header-data {
+  display: flex;
+  justify-content: center;
+  margin-left: 30px;
+  flex-direction: column;
+  font-size: 12px;
+  border: 0px solid #0f0;
+}
+.header-block {
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px 0;
+  border: 0px solid #f00;
+}
+.header-icon {
+  margin-right: 10px;
 }
 
 .header-phone {
@@ -39,6 +63,18 @@ body {
   color: var(--white-color);
   padding: .4rem 2.8rem;
   text-transform: uppercase;
+  margin: 20px 0;  
+}
+.header-button:hover {
+  animation: d1 1s forwards;  
+}
+
+@keyframes d1 {
+  from {}
+  to {
+    background-color: #006400;
+    color: #fff;
+  }
 }
 
 @media (min-width: 534px) {
@@ -46,8 +82,86 @@ body {
     width: 450px;
     margin: 0 auto;
   }
+  .header-data {
+    animation: change534 1s forwards;
+  }
+  @keyframes change534 {
+    from {}
+    to {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 20px;
+      margin-left: 0;
+    }
+  }
+  .header-block {
+    margin: 10px 0;
+  }
 }
-@media (min-width: 768px) {}
-@media (min-width: 1024px) {}
-@media (min-width: 1280px) {}
+@media (min-width: 768px) {
+  .container {
+    width: 700px;
+  }
+  .block-screen {
+    display: flex;
+      justify-content: space-between;
+  }
+  .header-data {
+    justify-content: space-between;
+  }
+  @keyframes change768 {
+    from {}
+    to {
+      
+      margin-right: 40px;
+    }
+  }
+  .header-block:first-child {
+    animation: change768 1s forwards;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    width: 900px;
+  }
+  .header-logo {
+    margin-top: 0;
+  }
+  .all-elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-data {
+    margin-bottom: 20px;
+  }
+  .header-block:first-child {
+    margin-right: 20px;
+  }
+  .header-logo {
+    animation: change1024 1s forwards;
+  }
+  @keyframes change1024 {
+    from {}
+    to {
+      margin-right: 50px;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    width: 1200px;
+  }
+  .header-logo {
+    animation: change1280 1s forwards;
+  }
+  @keyframes change1280 {
+    from {}
+    to {
+      margin-right: 350px;
+    }
+  }
+}
+
 @media (min-width: 1440px) {}
