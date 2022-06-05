@@ -7,11 +7,11 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: var(--basic-font);
 }
 .header {
   background-color: #000000;
   color: var(--white-color);
-  font-family: var(--basic-font);
   padding: 10px;
 }
 .container {
@@ -165,3 +165,81 @@ body {
 }
 
 @media (min-width: 1440px) {}
+
+
+
+
+
+/*content*/
+.page {
+  background-color: #1F0000;
+  color: var(--white-color);
+  padding: 20px 10px 30px 10px;
+}
+.content-caps {
+  color: var(--white-color);
+  text-align: center;
+}
+.content-slogan {
+  color: var(--gold-color);
+  text-align: center;
+  font-size: 2rem;
+  padding: 20px 0;
+}
+.content-list {
+  color: var(--gold-color);
+  margin-top: 30px;
+}
+.content-list li {
+  margin-top: 10px;
+}
+.content-button {
+  text-align: center;
+}
+.content-button button {
+  background-color: transparent;
+  border: 1px solid var(--gold-color);
+  border-radius: 20rem;
+  color: var(--white-color);
+  padding: .4rem 2.8rem;
+  text-transform: uppercase;
+  margin: 20px 0;  
+}
+.content-person {
+  width: 90%;
+}
+.person-name {
+  color: var(--white-color);
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--gold-color);
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.person-staff {
+  color: var(--gold-color);
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+/*footer*/
+.footer {
+  padding: 20px 10px;
+}
+.footer-stat {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.footer-caption {
+  font-size: 30px;
+  color: var(--gold-color);
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.footer-slogan {
+  background-color: #555;
+  padding: 10px 10px;
+  color: var(--white-color);
+}
